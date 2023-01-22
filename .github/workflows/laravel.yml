@@ -40,7 +40,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          cd /var/www/nomad
+          cd /var/www/nomads
           git pull origin main
           composer update -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
           php artisan migrate
